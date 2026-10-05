@@ -108,3 +108,17 @@ client.on('guildMemberAdd', async (member) => {
 });
 
 client.login(process.env.DISCORD_TOKEN);
+const { Client, GatewayIntentBits, Options } = require('discord.js');
+
+const client = new Client({
+  intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildMembers
+  ],
+  makeCache: Options.cacheWithLimits({
+    MessageManager: 10, // Sadece son 10 mesajı bellekte tut
+    PresenceManager: 0  // Kullanıcı durumlarını belleğe kaydetme
+  })
+});
