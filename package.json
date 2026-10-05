@@ -1,7 +1,7 @@
 {
-  "name": "aeroboxt",
+  "name": "aerobotx",
   "version": "1.0.0",
-  "description": "Roblox Akrobasi Discord Botu",
+  "description": "AeroBotx Sentinel & Milsim System",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
