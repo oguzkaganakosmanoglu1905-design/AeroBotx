@@ -1,10 +1,10 @@
 {
   "name": "aerobotx",
   "version": "1.0.0",
-  "description": "AeroBotx Sentinel & Milsim System",
+  "description": "AeroBotx Ultra Light Milsim Bot",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node --max-old-space-size=90 index.js"
   },
   "dependencies": {
     "discord.js": "^14.14.1",
